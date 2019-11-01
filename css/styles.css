@@ -1,0 +1,12 @@
+body {
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Staatliches', cursive; */
+}
+
+#logo_row {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    margin-bottom: 20px;
+    background-color: #02c3b0;
+}
