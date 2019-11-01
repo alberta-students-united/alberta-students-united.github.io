@@ -1,7 +1,10 @@
 body {
     height: 100%;
     width: 100%;
-    /* font-family: 'Staatliches', cursive; */
+    /* overflow-y: scroll; */
+    position: relative;
+
+    padding-bottom: 50px;
 }
 
 #logo_row {
@@ -9,4 +12,20 @@ body {
     padding: 50px 0px 50px 0px;
     margin-bottom: 20px;
     background-color: #02c3b0;
+}
+
+#navbar {
+    background-color:  #02c3b0 !important;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+}
+
+a {
+    color:#02c3b0 ;
+}
+
+a :hover {
+    color:#0e554e ;
 }

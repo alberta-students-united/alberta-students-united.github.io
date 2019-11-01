@@ -13,12 +13,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet"> 
 
   </head>
 
-  <body>
+  <body id="home">
+    <nav id="navbar" class="nav navbar navbar-expand-lg navbar-light fixed-top">
+      <a href="#" class="navbar-brand">
+          <img src="images/small_logo.png" height="28" alt="Alberta Students United">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a href="#home" class="nav-item nav-link active">Home</a>
+              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#involvement" class="nav-item nav-link">Get Involved</a>
+              <a href="#contact" class="nav-item nav-link">Contact</a>
+          </div>
+      </div>
+    </nav>
+
     <div class="container-fluid">
       <div class="row">
         <div id="logo_row" class="col-md-12">
@@ -26,18 +45,86 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          One of three columns
+      <div id="startchange"></div>
+
+      <div id="about" class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1>About</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis felis vel massa consectetur rutrum eget vel ipsum.
+            Aliquam tincidunt lacus elit, bibendum auctor augue blandit non. Phasellus nec euismod sapien. Nunc suscipit, ante at vestibulum convallis,
+            nisl augue vulputate tortor, nec vehicula urna libero ac metus. Vivamus vitae ligula sed leo malesuada faucibus sit amet non augue.
+            Fusce sed ullamcorper nunc, eu hendrerit augue. Vestibulum dictum lorem lacus, vel elementum odio finibus nec.
+            Donec metus eros, ultricies sit amet sollicitudin eu, cursus eu libero. In eget massa ac neque molestie rutrum.
+          </p>
+          <p>
+            Mauris diam arcu, convallis eu ipsum nec, pulvinar varius diam. Maecenas nec lacus at enim commodo gravida sit amet et velit. 
+            In consectetur nisi id augue pulvinar porttitor. Maecenas tempus mollis congue. Aenean erat dolor, vulputate sit amet euismod sed,
+            egestas finibus felis. Pellentesque convallis turpis ac est porta tristique. Sed eget elementum ante, at mollis est. Fusce mattis condimentum 
+            erat in posuere. Nam in nunc ante. Vivamus nibh risus, porta at ipsum sit amet, cursus dictum odio. Ut pulvinar ex et auctor fermentum. 
+          </p>
         </div>
       </div>
-    </div>
+
+      <div id="involvement" class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1>Get Involved</h1>
+
+          <p>
+            In venenatis, orci non lacinia tempus, orci magna sollicitudin nisi, quis cursus neque velit sed augue. Nullam consectetur, metus vel
+            fringilla faucibus, dolor mi volutpat dui, eget pellentesque diam risus in nibh. Vestibulum ante ipsum primis in faucibus orci luctus 
+            et ultrices posuere cubilia Curae; Morbi condimentum nunc id libero malesuada vulputate. Pellentesque aliquam ligula eget ante lobortis, 
+            quis efficitur nunc condimentum. Fusce at sem vulputate, facilisis orci sed, hendrerit metus. Etiam et neque suscipit, elementum ipsum in, 
+            imperdiet mi. Fusce ac sem non dui fringilla sodales mattis eget massa. In hac habitasse platea dictumst. Aenean nibh quam, cursus sit 
+            amet ligula vitae, commodo pretium urna. Aenean bibendum diam nulla, at viverra nisi vulputate nec. Maecenas quis mauris quis elit congue 
+            auctor. Fusce tincidunt lorem sed justo maximus faucibus. Praesent dignissim magna non rutrum pretium. Proin vel risus lectus.
+          </p>
+        </div>
+      </div>
+
+      <div id="contact" class="row">
+         <div class="col-md-8 offset-md-2">
+          <h1>Contact Us</h1>
+
+          <div class="row">
+            
+            <div class="col-md-4">     
+              <div class="box-part text-center">
+                <a href="https://www.instagram.com/albertastudentsunited/">
+                  <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>     
+                </a>  
+                <div class="title">
+                  <h4>Instagram</h4>
+                </div>             
+              </div>	 
+            </div>
+
+            <div class="col-md-4">     
+              <div class="box-part text-center">
+                <a href="https://www.facebook.com/AlbertaStudentsUnited">
+                  <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>     
+                </a>    
+                <div class="title">
+                  <h4>Facebook</h4>
+                </div>                  
+              </div>	 
+            </div>
+
+            <div class="col-md-4">     
+              <div class="box-part text-center">
+                <a href="https://twitter.com/ABstudentsunite">
+                  <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>     
+                </a>
+                <div class="title">
+                  <h4>Twitter</h4>
+                </div>                  
+              </div>	 
+            </div>
+
+           </div>		
+         </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -48,5 +135,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
             crossorigin="anonymous"></script>
+    
+    <script type="text/javascript"  src="js/script.js"></script>
   </body>
 </html>
