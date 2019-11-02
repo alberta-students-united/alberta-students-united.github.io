@@ -15,11 +15,16 @@ a :hover {
     color:#0e554e ;
 }
 
-.star-list {
+.big-icon {
+  font-size: 2em;
+  padding-right: 1em;
+}
+
+ul.star-list {
     list-style: none; /* Remove default bullets */
 }
 
-.star-list li::before {
+ul.star-list li::before {
     content: "\2605";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #02c3b0; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
@@ -47,8 +52,7 @@ a :hover {
 
 #petition {
   justify-content: center;
-  padding-bottom: 10px;
-  padding-top:
+  padding-top: 30px;
 }
 
 .title_header {
@@ -90,6 +94,7 @@ a.button4 {
   text-align:center;
   transition: all 0.2s;
   background-color: #02c3b0;
+  border-color: white;
 }
 
 a.button4:hover{
