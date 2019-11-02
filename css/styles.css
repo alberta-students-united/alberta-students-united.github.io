@@ -15,6 +15,21 @@ a :hover {
     color:#0e554e ;
 }
 
+.star-list {
+  list-style: none; /* Remove default bullets */
+}
+
+.star-list li::before {
+  content: "\2605";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #02c3b0; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  font-size: 2.5em;
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
 #logo_row {
     text-align: center;
     padding: 50px 0px 50px 0px;
