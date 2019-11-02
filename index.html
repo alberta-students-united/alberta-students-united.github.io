@@ -84,60 +84,28 @@
         </div>
       </div>
 
+
       <div id="calendar" class="row">
-        <div class="col-md-8 offset-md-2">
+        <div id="calendar-content" class="col-md-8 offset-md-2">
           <h1 class="title_header">Calendar</h1>
-          <div class="row row-striped">
-            <div class="col-2 text-right">
-              <h1 class="display-4"><span class="badge badge-secondary">06</span></h1>
-              <h2>NOV</h2>
+          <template>
+            <div class="row row-striped">
+              <div class="col-2 text-right">
+                <h1 class="display-4"><span id="date-num" class="badge badge-secondary"></span></h1>
+                <h2 id="date-month"></h2>
+              </div>
+              <div class="col-10">
+                <h3 class="text-uppercase"><strong id="title"></strong></h3>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-calendar" aria-hidden="true"></i><span id="dotw"></span></li>
+                  <li class="list-inline-item"><i class="fa fa-clock" aria-hidden="true"></i> <span id="time"></span></li>
+                  <li class="list-inline-item"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> <span id="location"></span></li>
+                </ul>
+                <p id="description">
+                </p>
+              </div>
             </div>
-            <div class="col-10">
-              <h3 class="text-uppercase"><strong>MRU Coordination Meeting</strong></h3>
-              <ul class="list-inline">
-                  <li class="list-inline-item"><i class="fa fa-calendar" aria-hidden="true"></i> Wednesday </li>
-                <li class="list-inline-item"><i class="fa fa-clock" aria-hidden="true"></i> 3:00 PM - 6:00 PM</li>
-                <li class="list-inline-item"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Mount Royal University, EL 1341</li>
-              </ul>
-              <p>
-                Meeting for MRU students to organize. All other schools welcome.
-              </p>
-            </div>
-          </div>
-          <div class="row row-striped">
-            <div class="col-2 text-right">
-              <h1 class="display-4"><span class="badge badge-secondary">07</span></h1>
-              <h2>NOV</h2>
-            </div>
-            <div class="col-10">
-              <h3 class="text-uppercase"><strong>Prep for General Assembly</strong></h3>
-              <ul class="list-inline">
-                  <li class="list-inline-item"><i class="fa fa-calendar" aria-hidden="true"></i> Thursday</li>
-                <li class="list-inline-item"><i class="fa fa-clock" aria-hidden="true"></i> 4:00 PM - 6:00 PM</li>
-                <li class="list-inline-item"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> University of Calgary, TFDL 210</li>
-              </ul>
-              <p>
-                We will provide updates for our current status and discuss the goals of the upcoming general assembly.
-              </p>
-            </div>
-          </div>
-          <div class="row row-striped">
-            <div class="col-2 text-right">
-              <h1 class="display-4"><span class="badge badge-secondary">14</span></h1>
-              <h2>NOV</h2>
-            </div>
-            <div class="col-10">
-              <h3 class="text-uppercase"><strong>General Assembly</strong></h3>
-              <ul class="list-inline">
-                  <li class="list-inline-item"><i class="fa fa-calendar" aria-hidden="true"></i> Thursday</li>
-                <li class="list-inline-item"><i class="fa fa-clock" aria-hidden="true"></i> 4:00 PM - 6:00 PM </li>
-                <li class="list-inline-item"><i class="fa fa-map-marker-alt" aria-hidden="true"></i> University of Calgary, Arts Lounge</li>
-              </ul>
-              <p>
-                General assembly to gather support numbers and barnstorm.
-              </p>
-            </div>
-          </div>
+          </template>
         </div>
       </div>
 
