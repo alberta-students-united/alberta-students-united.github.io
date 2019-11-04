@@ -29,7 +29,7 @@ a :hover {
 
 .parallax {
   /* The image used */
-  background-image: url("../images/protest.jpeg");
+  background-image: url("../images/protest-2.jpg");
 
   /* Set a specific height */
   height: 610px;
@@ -80,12 +80,23 @@ ul.star-list li::before {
     padding-top: 30px;
 }
 
-#petition {
+#splash {
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+#slogan {
+  display: flex;
+  background-color: black;
+  padding: 0px 25px 0px 25px;
+  margin: 30px;
+  color: white;
+  font-size: 5em;
+  font-family: 'Staatliches', cursive;
+}
+
 
 .title_header {
     font-family: 'Staatliches', cursive;
@@ -126,11 +137,11 @@ a.button4 {
   text-align:center;
   transition: all 0.2s;
   background-color: #02c3b0;
-  border-color: white;
+  border-color: #02c3b0;
 }
 
 a.button4:hover{
-  border-color: #0e554e;
+  border-color: white;
 }
 
 .bouncy {
