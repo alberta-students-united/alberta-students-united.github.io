@@ -29,7 +29,7 @@ $(document).ready(function () {
             title: "General Assembly",
             time: "4:00 PM - 6:00 PM",
             location: "University of Calgary, Arts Lounge",
-            description: "General assembly to gather support numbers and braindstorm. ",
+            description: "General assembly to gather support numbers and brainstorm. ",
             important: true
         }
     ]
