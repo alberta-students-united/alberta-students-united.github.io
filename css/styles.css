@@ -55,6 +55,7 @@ ul.star-list {
     list-style: none; /* Remove default bullets */
 }
 
+
 ul.star-list li::before {
     content: "\2605";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #02c3b0; /* Change the color */
@@ -65,11 +66,20 @@ ul.star-list li::before {
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+.star-list li p {
+    margin: -40px auto auto 20px;
+}
 
 #logo_row {
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 60px 0px 50px 0px;
     background-color: #02c3b0;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    max-width: 441px;
 }
 
 #navbar {
@@ -157,4 +167,39 @@ a.button4:hover{
   48%{top:-0.4em}
   50%{top:0em}
   100%{top:0em;}
-} 
+}
+
+
+@media screen and (max-width: 768px) {
+  #slogan {
+      font-size: 4.25em;
+  }
+ 
+  .parallax {
+      height: 510px;
+  }
+
+   
+
+}
+
+
+@media screen and (max-width: 600px) {
+  #logo {
+      width: 60%;
+  }
+
+
+   #slogan {
+      font-size: 3.25em;
+  }
+
+  a.button4 {
+    font-size: 1.5em;
+  }
+
+   
+  .parallax {
+      height: 410px;
+  }
+}
