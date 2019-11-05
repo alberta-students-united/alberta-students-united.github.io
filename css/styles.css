@@ -7,13 +7,6 @@ body {
     padding-bottom: 50px;
 }
 
- * , *:before, *:after{ 
-     box-sizing:border-box; 
-     -moz-box-sizing:border-box; 
-     -webkit-box-sizing:border-box; 
-     -ms-box-sizing:border-box;
-   }
-
 a {
     color:#02c3b0 ;
 }
@@ -178,9 +171,6 @@ a.button4:hover{
   .parallax {
       height: 510px;
   }
-
-   
-
 }
 
 
@@ -201,5 +191,9 @@ a.button4:hover{
    
   .parallax {
       height: 410px;
+  }
+
+  .title {
+    visibility: hidden;
   }
 }
