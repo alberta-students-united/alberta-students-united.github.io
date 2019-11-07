@@ -117,7 +117,7 @@ ul.star-list li::before {
 }
 
 .row-striped {
-    padding: 15px 0;
+    padding: 15px 40px 0;
 }
 
 .important-event {
