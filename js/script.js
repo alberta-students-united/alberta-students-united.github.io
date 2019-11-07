@@ -29,7 +29,7 @@ $(document).ready(function () {
         {
             date: "11/14/2019",
             title: "University Student Barnstorm",
-            url: [ {name: "EventBrite",
+            url: [ {name: "Eventbrite",
                     icon: ["fa", "fa-calendar-plus"],
                     url: "https://www.eventbrite.ca/e/79983144739"},
                    {name: "Facebook",
