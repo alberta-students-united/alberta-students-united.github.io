@@ -121,8 +121,8 @@ $(document).ready(function () {
                 description.appendChild(newLink);
             }
             description.append(descriptionBits[j]);
+        } else {
+            description.append(events[i].description);
         }
-
-        // description.append(events[i].description);
     }
 });
