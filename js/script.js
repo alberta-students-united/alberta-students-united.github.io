@@ -42,6 +42,38 @@ $(document).ready(function () {
                           Please join us on November 14th so that we can immediately get to work. There is no time to waste when\
                           our future is at stake. Register now using either # or #, or both!",
             important: true
+        },
+        {
+            date: "11/21/2019",
+            title: "AUPE Information Picket - Fight the Cuts",
+            url: [{
+                name: "Facebook",
+                icon: ["fab", "fa-facebook-f"],
+                url: "https://www.facebook.com/events/2154501801318294/"}],
+            time: "12:00 PM - 1:00 PM",
+            location: "University of Calgary, Taylor Quad",
+            description: "Join the resistance! Fight the cuts to university services, fight tuition hikes, fight against cuts to \
+                          jobs and wages. Join the information picket at University of Calgary at the Taylor Quad, in front of the \
+                          MacEwan Student Centre. Register now on #.",
+            important: false
+        },
+        {
+            date: "11/21/2019",
+            title: "University Student Barnstorm (Round 2)",
+            url: false,
+            time: "TBA",
+            location: "TBA",
+            description: "Join us for our second round of barnstorming. ",
+            important: false,
+        },
+        {
+            date: "11/29/2019",
+            title: "McDougall March",
+            url: false,
+            time: "TBA",
+            location: "TBA",
+            description: "TBA",
+            important: true
         }
     ]
 
@@ -75,54 +107,59 @@ $(document).ready(function () {
         description = currentEvent.getElementById("description");
         eventList = currentEvent.getElementById("event-info-list")
 
-        title.append(events[i].title);
         date = new Date(events[i].date);
-        date_num.append(String(date.getDate()).padStart(2, '0'));
-        date_month.append(date.toLocaleString("en-us", { month: "short" }).toUpperCase());
-        date_dayOfTheWeek.append(" " + days[date.getDay()]);
-        time.append(events[i].time);
-        location.append(events[i].location);
-    
-        if(events[i].important) {
-            date_num.classList.add("important-event");
-        }
+        var today = new Date();
+        if(date >= today) {
+            title.append(events[i].title);
 
-        date_num.id = "date-num-" + i;
-        date_month.id = "date-month-" + i;
-        date_dayOfTheWeek.id = "dotw-" + i;
-        title.id = "title-" + i;
-        time.id = "time-" + i;
-        location.id = "location-" + i;
-        description.id = "description-" + i;
 
-        calendar.appendChild(currentEvent);
+            date_num.append(String(date.getDate()).padStart(2, '0'));
+            date_month.append(date.toLocaleString("en-us", { month: "short" }).toUpperCase());
+            date_dayOfTheWeek.append(" " + days[date.getDay()]);
+            time.append(events[i].time);
+            location.append(events[i].location);
 
-        if (events[i].url) {
-            var descriptionBits = events[i].description.split("#")
-            for (j = 0; j < events[i].url.length; j++) {
-                currentEventLink = eventTemplate.content.cloneNode(true);
-                currentEventLink.getElementById("event-icon").classList.add(events[i].url[j].icon[0]);
-                currentEventLink.getElementById("event-icon").classList.add(events[i].url[j].icon[1]);
-
-                currentEventLink.getElementById("event-link").href = events[i].url[j].url;
-                currentEventLink.getElementById("event-link").append(events[i].url[j].name);
-                
-                currentEventLink.getElementById("event-icon").id = "event-icon-" + i + "-" + j;
-                currentEventLink.getElementById("event-link").id = "event-icon-" + i + "-" + j;
-
-                eventList.append(currentEventLink);
-
-                description.append(descriptionBits[j]);
-
-                var newLink = document.createElement("a");
-                newLink.href = events[i].url[j].url;
-                newLink.append(events[i].url[j].name);
-                events[i].description = events[i].description.replace("#", newLink);
-                description.appendChild(newLink);
+            if (events[i].important) {
+                date_num.classList.add("important-event");
             }
-            description.append(descriptionBits[j]);
-        } else {
-            description.append(events[i].description);
+
+            date_num.id = "date-num-" + i;
+            date_month.id = "date-month-" + i;
+            date_dayOfTheWeek.id = "dotw-" + i;
+            title.id = "title-" + i;
+            time.id = "time-" + i;
+            location.id = "location-" + i;
+            description.id = "description-" + i;
+
+            calendar.appendChild(currentEvent);
+
+            if (events[i].url) {
+                var descriptionBits = events[i].description.split("#")
+                for (j = 0; j < events[i].url.length; j++) {
+                    currentEventLink = eventTemplate.content.cloneNode(true);
+                    currentEventLink.getElementById("event-icon").classList.add(events[i].url[j].icon[0]);
+                    currentEventLink.getElementById("event-icon").classList.add(events[i].url[j].icon[1]);
+
+                    currentEventLink.getElementById("event-link").href = events[i].url[j].url;
+                    currentEventLink.getElementById("event-link").append(events[i].url[j].name);
+
+                    currentEventLink.getElementById("event-icon").id = "event-icon-" + i + "-" + j;
+                    currentEventLink.getElementById("event-link").id = "event-icon-" + i + "-" + j;
+
+                    eventList.append(currentEventLink);
+
+                    description.append(descriptionBits[j]);
+
+                    var newLink = document.createElement("a");
+                    newLink.href = events[i].url[j].url;
+                    newLink.append(events[i].url[j].name);
+                    events[i].description = events[i].description.replace("#", newLink);
+                    description.appendChild(newLink);
+                }
+                description.append(descriptionBits[j]);
+            } else {
+                description.append(events[i].description);
+            }
         }
     }
 });
