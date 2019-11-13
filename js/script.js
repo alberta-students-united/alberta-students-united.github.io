@@ -44,6 +44,16 @@ $(document).ready(function () {
             important: true
         },
         {
+            date: "11/18/2019",
+            title: "U of C Budget Townhall",
+            url: false,
+            time: "1:00 PM - 2:00 PM",
+            location: "University of Calgary, MacEwan Conference and Event Centre (MSC 318)",
+            description: "Please join your fellow students, faculty and staff for a discussion about the upcoming university budget. \
+                          Ideas brought forward from the previous townhall (October 16th) will be assessed and reported.",
+            important: false,
+        },
+        {
             date: "11/21/2019",
             title: "AUPE Information Picket - Fight the Cuts",
             url: [{
@@ -63,17 +73,17 @@ $(document).ready(function () {
             url: false,
             time: "TBA",
             location: "TBA",
-            description: "Join us for our second round of barnstorming. ",
-            important: false,
+            description: "Join us for our second round of barnstorming. More info coming soon.",
+            important: true,
         },
         {
             date: "11/29/2019",
-            title: "McDougall March",
+            title: "McDougall Anti-Austerity March",
             url: false,
             time: "TBA",
             location: "TBA",
-            description: "TBA",
-            important: true
+            description: "More info coming soon.",
+            important: false
         }
     ]
 
