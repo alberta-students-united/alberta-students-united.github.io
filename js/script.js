@@ -36,7 +36,7 @@ $(document).ready(function () {
                     icon: ["fab", "fa-facebook-f"],
                     url: "https://www.facebook.com/events/3111634109061790/"}],
             time: "4:00 PM - 7:00 PM",
-            location: "University of Calgary, Arts Lounge",
+            location: "University of Calgary, Arts Lounge (SS 103)",
             description: "In light of the new provincial budget, with plenty of cuts that will affect Alberta's working-class\
                           citizens, we want to address the cuts to university funding that will increase student tuition.\
                           Please join us on November 14th so that we can immediately get to work. There is no time to waste when\
@@ -71,8 +71,8 @@ $(document).ready(function () {
             date: "11/21/2019",
             title: "University Student Barnstorm (Round 2)",
             url: false,
-            time: "TBA",
-            location: "TBA",
+            time: "3:00 PM - 6:00 PM",
+            location: "University of Calgary, Arts Lounge (SS 103)",
             description: "Join us for our second round of barnstorming. More info coming soon.",
             important: true,
         },
