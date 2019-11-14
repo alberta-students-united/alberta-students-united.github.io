@@ -106,6 +106,9 @@ $(document).ready(function () {
 
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     for (i = 0; i < events.length; i++) {    
         currentEvent = temp.content.cloneNode(true);
         date_num = currentEvent.getElementById("date-num");
@@ -118,7 +121,9 @@ $(document).ready(function () {
         eventList = currentEvent.getElementById("event-info-list")
 
         date = new Date(events[i].date);
-        var today = new Date();
+
+        console.log(date);
+        console.log(today);
         if(date >= today) {
             title.append(events[i].title);
 
