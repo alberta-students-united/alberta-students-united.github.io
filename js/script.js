@@ -78,12 +78,19 @@ $(document).ready(function () {
         },
         {
             date: "11/29/2019",
-            title: "McDougall Anti-Austerity March",
-            url: false,
-            time: "TBA",
-            location: "TBA",
-            description: "More info coming soon.",
-            important: false
+            title: "Hands Off Our Education - Student Protest",
+            url: [{
+                name: "Facebook",
+                icon: ["fab", "fa-facebook-f"],
+                url: "https://www.facebook.com/events/2482497711995802/"
+            }],
+            time: "12:30 PM - 2:30 PM",
+            location: "McDougall Centre, 455 6 Street SW",
+            description: "Join your fellow students in putting a face to the new cuts facing Alberta post-secondary institutions. \
+                          Whether you are a current student, an academic, or a member of the public, we encourage you to attend and \
+                          show your solidarity. We cannot stand silent while the government makes reckless and short-sited decisions \
+                          that will affect all our futures. Register now on #.",
+            important: true
         }
     ]
 
